@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Tracker Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Stock Tracker Dashboard</h1>
+            <div class="search-container">
+                <div>
+                    <input type="text" id="stockSymbol" placeholder="Enter stock symbol (e.g., AAPL)">
+                    <button onclick="searchStock()">Search</button>
+                </div>
+                <div>
+                    <select id="trendingStocks">
+                        <option value="">Select Trending Stock</option>
+                    </select>
+                    <button>Load Stock</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="card">
+                <h2>Stock Overview</h2>
+                <div id="stockInfo"></div>
+            </div>
+            <div class="card">
+                <h2>Market Statistics</h2>
+                <div id="marketStats"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Price History</h2>
+            <div class="chart-container">
+                <canvas id="priceChart"></canvas>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Comparison Table</h2>
+            <table class="stock-table">
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Price</th>
+                        <th>Change</th>
+                        <th>Volume</th>
+                    </tr>
+                </thead>
+                <tbody id="comparisonTable"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/assets/script.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
